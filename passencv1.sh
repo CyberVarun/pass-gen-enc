@@ -98,3 +98,17 @@ then
 	done
 exit
 fi
+
+if [[ "$1" == "-h" ]];
+then 
+	echo "Passenc 1.0"
+	echo "Usage passenc -s [Password/Passphrase] [Hashing Algorithm]"
+	echo " "
+	echo "-s			for shortcut mode"
+	echo "[Password/Passphrase] 	Support all in UTF-8 encoded(normal letters)."
+	echo "[Hashing Algorithm]	Support md5, sha, sha1, sha224, sha256, sha512 only."
+exit
+fi
+
+echo "passenc: missing parameters"
+echo "Try \"passenc -h\" for more information"
