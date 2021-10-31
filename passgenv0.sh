@@ -2,50 +2,17 @@
 
 # Password Genrator
 
-#colors
+# Colors
 rset='\033[0m'
-red='\033[1;31m'
 grn='\033[1;32m'
-ylo='\033[1;33m'
 blue='\033[1;34m'
-cyan='\033[1;36m'
-pink='\033[1;35m'
-
-NUM=0
-if [[ "$1" == "-s" ]];
-then
-	for p in $(seq 1 "$4" );
-	do
-		if [[ "$3" == "base64" ]];
-		then
-			until [[ "${NUM}" == "$4" ]];
-			do
-			MAIN=$(openssl rand -"$3" 48 | cut -c1-"$2")
-			NUM=$(expr $NUM + 1)
-			echo -e "${NUM}. ${MAIN}"
-			done	
-
-		elif [[ "$3" == "hex" ]];
-        	then
-       			until [[ "${NUM}" == "$4" ]];
-                	do
-                        MAIN=$(openssl rand -"$3" 48 | cut -c1-"$2")
-                        NUM=$(expr $NUM + 1)
-                        echo -e "${NUM}. ${MAIN}"
-                	done
-		else
-			echo "Encoding method not found....."
-		fi
-	done
-exit
-fi
 
 # Taking User input
-echo "Enter the lenth of password you want: "
+echo -e "$blue Enter the lenth of password you want: $rset"
 read -r PASSLEN
-echo "Enter encoding method(like base64, hex): "
+echo -e "$blue Enter encoding method(like base64, hex): $rset"
 read -r ENTP
-echo "How many password you want: "
+echo -e "$blue How many password you want: $rset"
 read -r COUNT
 echo
 NUM=0
@@ -59,7 +26,7 @@ do
 		do
 			MAIN=$(openssl rand -"${ENTP}" 48 | cut -c1-"${PASSLEN}")
 			NUM=$(expr $NUM + 1)
-			echo -e "${NUM}. ${MAIN}"
+			echo -e "$grn ${NUM}. ${MAIN} $rset"
 		done
 
 	elif [[ "${ENTP}" == "hex" ]];
@@ -68,7 +35,7 @@ do
                 do
                         MAIN=$(openssl rand -"${ENTP}" 48 | cut -c1-"${PASSLEN}")
                         NUM=$(expr $NUM + 1)
-                        echo -e "${NUM}. ${MAIN}"
+                        echo -e "$grn ${NUM}. ${MAIN} $rset"
                 done
 
 	else
