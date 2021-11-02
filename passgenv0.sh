@@ -10,7 +10,7 @@ blue='\033[1;34m'
 # Taking User input
 echo -e "$blue Enter the lenth of password you want: $rset"
 read -r PASSLEN
-echo -e "$blue Enter encoding method(like base64, hex): $rset"
+echo -e "$blue Enter Hash Type(like base64, hex): $rset"
 read -r ENTP
 echo -e "$blue How many password you want: $rset"
 read -r COUNT
@@ -39,6 +39,6 @@ do
                 done
 
 	else
-		echo "Encoding method not found....."
+		echo "Hash Type does not found!!!!"
 	fi
 done

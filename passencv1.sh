@@ -92,7 +92,7 @@ then
 
 		elif [[ "$3" != "$i" ]];
 		then
-			echo "Algorithm not found please try again"
+			echo "Hash type does not found please try again"
 			exit
 		fi
 	done
@@ -102,11 +102,11 @@ fi
 if [[ "$1" == "-h" ]];
 then 
 	echo "Passenc 1.0"
-	echo "Usage passenc -s [Password/Passphrase] [Hashing Algorithm]"
+	echo "Usage passenc -s [Password/Passphrase] [Hash Type]"
 	echo " "
 	echo "-s			for shortcut mode"
 	echo "[Password/Passphrase] 	Support all in UTF-8 encoded(normal letters)."
-	echo "[Hashing Algorithm]	Support md5, sha, sha1, sha224, sha256, sha512 only."
+	echo "[Hash Type]	        Support md5, sha, sha1, sha224, sha256, sha512 only."
 exit
 fi
 

@@ -39,11 +39,11 @@ fi
 if [[ "$1" == "-h" ]];
 then 
 	echo "Passgen 1.0"
-	echo "Usage Passgen -s [Length of password] [Hashing Algorithm] [Passwords number]"
+	echo "Usage Passgen -s [Length of password] [Hash Type] [Passwords number]"
 	echo " "
 	echo "-s			for shortcut mode"
 	echo "[Length of password ] 	Length of password should be only in digit."
-	echo "[Hashing Algorithm]	Support base64 and hex only."
+	echo "[Hash Type]	        Support base64 and hex only."
 	echo "[Passwords number]	Depend how on many passwords you want. should be only in digit."
 exit
 fi

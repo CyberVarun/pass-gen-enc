@@ -15,7 +15,7 @@ pink='\033[1;35m'
 echo -e "$blue Enter your passphrase: $rset"
 read -r "PASSPH"
 
-echo -e "$blue Select encypter: $rset"
+echo -e "$blue Select Hash Type: $rset"
 
 echo -e "$red 1 for md5sum $rset"
 echo -e "$ylo 2 for sha1sum $rset"

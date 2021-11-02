@@ -10,6 +10,7 @@ fi
 if [[ $1 == "--uninstall" ]];
 then
 	rm -rf /usr/local/bin/passenc /usr/local/bin/passgen
+	echo "Removed previous files"
 	exit
 fi
 
