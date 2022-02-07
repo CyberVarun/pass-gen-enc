@@ -11,45 +11,38 @@
 
 ### Installation
 
-`sudo apt install openssl`
-
-`git clone https://github.com/CyberVarun/pass-gen-enc.git `
-
-`cd pass-gen-enc/`
-
-`./install.sh`
-
+```
+sudo apt install openssl
+git clone https://github.com/CyberVarun/pass-gen-enc.git
+cd pass-gen-enc/
+./install.sh
+```
 <hr>
 
 ### Usage
 
 1.**Passgen**
 
-`$ passgen -h`
+`$ passgen -h
 
-`Passgen 1.0`
+```
+Passgen 1.0`
+Usage Passgen -s [Length of password] [Hash Type] [Passwords number]
 
-`Usage Passgen -s [Length of password] [Hash Type] [Passwords number]`
-
-`-s                      for shortcut mode`
-
-`[Length of password ]   Length of password should be only in digit.`
-
-`[Hash Type]     Support base64 and hex only.`
-
-`[Passwords number]      Depend how on many passwords you want. should be only in digit.`
+-s                      for shortcut mode
+[Length of password ]   Length of password should be only in digit.
+[Hash Type]     Support base64 and hex only.
+[Passwords number]      Depend how on many passwords you want. should be only in digit.
+```
 
 2.**Passenc**
 
-`$ passenc -h`
+```
+$ passenc -h
+Passenc 1.0
+Usage passenc -s [Password/Passphrase] [Hash Type]
 
-`Passenc 1.0`
-
-`Usage passenc -s [Password/Passphrase] [Hash Type]`
-
-`-s                      for shortcut mode`
-
-`[Password/Passphrase]   Support all in UTF-8 encoded(normal letters).`
-
-`[Hash Type]     Support md5, sha, sha1, sha224, sha256, sha512 only.`
-
+-s                      for shortcut mode
+[Password/Passphrase]   Support all in UTF-8 encoded(normal letters).
+[Hash Type]     Support md5, sha, sha1, sha224, sha256, sha512 only.
+```
