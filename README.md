@@ -11,7 +11,7 @@
 
 ### Installation
 
-```
+```bash
 sudo apt install openssl
 git clone https://github.com/CyberVarun/pass-gen-enc.git
 cd pass-gen-enc/
@@ -23,10 +23,9 @@ cd pass-gen-enc/
 
 1.**Passgen**
 
-`$ passgen -h
-
-```
-Passgen 1.0`
+```python
+$ passgen -h
+Passgen 1.0
 Usage Passgen -s [Length of password] [Hash Type] [Passwords number]
 
 -s                      for shortcut mode
@@ -37,7 +36,7 @@ Usage Passgen -s [Length of password] [Hash Type] [Passwords number]
 
 2.**Passenc**
 
-```
+```python
 $ passenc -h
 Passenc 1.0
 Usage passenc -s [Password/Passphrase] [Hash Type]
